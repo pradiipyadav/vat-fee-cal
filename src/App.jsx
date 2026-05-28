@@ -28,10 +28,10 @@ export default function App() {
     const total = value + feeIncludingVat + vat;
 
     return {
-      net: value.toFixed(2),
-      fee: feeIncludingVat.toFixed(2),
+      net: value.toFixed(4),
+      fee: feeIncludingVat.toFixed(4),
       vat: vat.toFixed(2),
-      total: total.toFixed(2),
+      total: total.toFixed(4),
     };
   }
 
@@ -50,10 +50,10 @@ export default function App() {
   const feeIncludingVat = feeBase + feeVat;
 
   return {
-    net: net.toFixed(2),
-    fee: feeIncludingVat.toFixed(2),
+    net: net.toFixed(4),
+    fee: feeIncludingVat.toFixed(4),
     vat: vat.toFixed(2),
-    total: value.toFixed(2),
+    total: value.toFixed(4),
   };
 }, [amount, vatRate, feeRate, mode]);
   return (
