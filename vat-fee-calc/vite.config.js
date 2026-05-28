@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/vat-fee-cal/'
+  base: '/vat-fee-cal/vat-fee-cal/'
 })
